@@ -54,18 +54,7 @@ This project:
 
 ## 📁 Project Structure
 
-Hypertension-risk-predection/
-│
-├── assets/ # Static files (CSS, images)
-├── media/ # Uploaded / generated media
-├── users/ # Django app (user management)
-├── bloodlevel/ # Django app (prediction logic)
-│
-├── hypertension_model.sav # Trained ML model
-├── db.sqlite3 # Database
-├── manage.py # Django entry point
-├── requirement.txt # Python dependencies
-└── README.md # Project documentation
+Hypertension-risk-predection/ │ ├── assets/ # Static files (CSS, images) ├── media/ # Uploaded / generated media ├── users/ # Django app (user management) ├── bloodlevel/ # Django app (prediction logic) │ ├── hypertension_model.sav # Trained ML model ├── db.sqlite3 # Database ├── manage.py # Django entry point ├── requirement.txt # Python dependencies └── README.md # Project documentation screen shot
 
 
 ---
