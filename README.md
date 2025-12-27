@@ -54,6 +54,7 @@ This project:
 
 ## 📁 Project Structure
 
+```text
 Hypertension-risk-predection/
 │
 ├── assets/                   # Static files (CSS, images)
