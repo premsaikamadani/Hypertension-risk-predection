@@ -53,6 +53,7 @@ This project:
 ---
 
 ## 📁 Project Structure
+
 Hypertension-risk-predection/
 │
 ├── assets/ # Static files (CSS, images)
