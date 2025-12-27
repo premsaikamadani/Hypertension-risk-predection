@@ -1,7 +1,8 @@
-# 🩺 Hypertension Risk Prediction System
+# 🩺 Efficient Data-driven Machine Learning Models for Hypertension Risk Prediction
 
-A **Machine Learning powered Django web application** that predicts the risk of **Hypertension (High Blood Pressure)** based on user health inputs.  
-This project is designed as a **real-world healthcare ML application**, suitable for **final year projects, interviews, and resumes**.
+A **Django-based Machine Learning web application** that predicts the risk of **Hypertension (High Blood Pressure)** using efficient, data-driven models.  
+Designed as a **real-world healthcare ML system** for academic projects, interviews, and resumes.
+
 
 ---
 
