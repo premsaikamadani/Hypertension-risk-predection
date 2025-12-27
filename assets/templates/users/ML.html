@@ -1,0 +1,67 @@
+{% extends 'users/userbase.html'%}
+{%block content%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ML page</title>
+</head>
+<body>
+    <center>
+        <h3>Random forest RESULTS</h3>
+    <table border="1">
+        <tr><td>Random forest_Accuracy:</td><td>{{accuracy.RF}}</td> </tr>
+    
+
+    
+        
+        <tr><td>Random forest_precision:</td><td>{{precision.RF}}</td> </tr>
+        <tr><td>Random forest_f1score:</td><td>{{f1score.RF}}</td> </tr>
+
+        
+        <tr><td>Random forest_recall:</td><td>{{recall.RF}}</td> </tr>
+    
+
+        <
+    </table>
+    </center>
+    <center>
+        <h3>SVM RESULTS</h3>
+    <table border="1">
+        
+        <tr><td>SVM_Accuracy:</td><td>{{accuracy.SVM}}</td> </tr>
+        <tr><td>SVM_precision:</td><td>{{precision.SVM}}</td> </tr>
+        <tr><td>SVM_recall:</td><td>{{recall.SVM}}</td> </tr>
+        <tr><td>SVM_f1score:</td><td>{{f1score.SVM}}</td> </tr>
+
+        
+
+
+    </table>
+    </center>
+    <center>
+        <h3>LogisticRegression RESULTS</h3>
+    <table border="1">
+        
+        <tr><td>LR_Accuracy:</td><td>{{accuracy.LogisticRegression}}</td> </tr>
+        <tr><td>LR_precision:</td><td>{{precision.LogisticRegression}}</td> </tr>
+        <tr><td>LR_recall:</td><td>{{recall.LogisticRegression}}</td> </tr>
+        <tr><td>LR_f1score:</td><td>{{f1score.LogisticRegression}}</td> </tr>
+        
+
+    </table>
+    </center>
+    <!-- <center>
+        <h3>Naivy_biyas Results</h3>
+    <table>
+
+        <tr><td>Accuracy</td><td>{{accuracy1}}</td> </tr>
+
+        <tr><td>Recall</td><td>{{recall1}}</td> </tr>
+        <tr><td>F1_Score</td><td>{{f1score1}}</td> </tr>
+
+    </table>
+    </center> -->
+</body>
+</html>
+{%endblock%}

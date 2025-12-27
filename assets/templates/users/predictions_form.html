@@ -1,0 +1,112 @@
+{% extends 'users/userbase.html'%}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ML page</title>
+    <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+
+</head>
+<body>
+<center>
+    <h1 align="center">Prediction Form</h1>
+    <p>
+        The Test Form Result is <h3><font color="RED">{{result}}</font> </h3>
+    </p>
+    <form action="{%url 'prediction'%}" method="post">
+        {%csrf_token%}
+    <table>
+        <thead>
+        <tr>
+            <th>Fields</th>
+            <th>Values</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Age</td>
+            <td><input type="number" class="form-control" name="age" required></td>
+        </tr>
+         <tr>
+            <td>Gender</td>
+            <td>
+                <select class="form-control" name="Gender" required>
+                    <option value="">--Select-- </option>
+                    <option value="1">Male</option>
+                    <option value="0">Female</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>BMI</td>
+            <td><input type="number" class="form-control" name="BMI" step="0.01" min="19.8" max="24.0" required></td>
+        </tr>
+        </tr>
+         <tr>
+            <td>Smoking</td>
+            <td>
+                <select class="form-control" name="Smoking" required>
+                    <option value="">--Select-- </option>
+                    <option value="1">True</option>
+                    <option value="0">False</option>
+                </select>
+            </td>
+        </tr>
+         <tr>
+            <td>Daily steps</td>
+            <td><input type="number" class="form-control" name="Daily steps" min="2600" max="6000"></td>
+        </tr>
+         <tr>
+            <td>Daily alcohol	</td>
+            <td><input type="number" class="form-control" name="Daily alcohol" min="250" max="400" required></td>
+        </tr>
+
+         <tr>
+            <td>Daily salt	</td>
+            <td><input type="number" class="form-control" name="Daily_salt" min="1" max="3" step="0.1" required></td>
+        </tr>
+
+         <tr>
+            <td>Stress Level</td>
+            <td>
+                <select class="form-control" name="Stress_Level" required>
+                    <option value="">--Select-- </option>
+                    <option value="0">LOW</option>
+                    <option value="1">MEDIUM</option>
+                    <option value="2">HIGH</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Predict Result" class="form-control">
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+</form>
+
+
+</center>
+</body>
+</html>
+{% endblock %}
